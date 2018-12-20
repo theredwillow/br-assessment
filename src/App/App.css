@@ -1,0 +1,12 @@
+@font-face
+{
+    font-family: 'Avenir Next Demi Bold';
+    src: url(../fonts/AvenirNextDemiBold.ttf) format('truetype');
+}
+
+:root
+{
+  --lighter-color: #43e895;
+  --darker-color: #34b379;
+  --header-font-color: #ffffff;
+}
