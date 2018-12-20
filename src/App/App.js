@@ -23,7 +23,7 @@ const App = () => {
 
   return (<div className="App">
     <Header />
-    <List restaurants={exampleArray} />
+    <List active="0" restaurants={exampleArray} />
     Hello World!
   </div>);
 };
