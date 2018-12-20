@@ -1,6 +1,6 @@
 import React from 'react';
 import './ListTile.css';
-import hopdoddy from '../../../images/hopdoddy.jpg';
+import hopdoddy from '../../../images/hopdoddy.png';
 
 const ListTile = ({name="Restaurant Name", category="Category Type", image=hopdoddy}) => {
     return (
