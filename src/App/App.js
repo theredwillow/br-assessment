@@ -9,7 +9,13 @@ const App = () => {
   let exampleArray = [
     {
       name: "Taco 'Bout It",
-      category: "Taco Stand"
+      category: "Taco Stand",
+      streetAddress: "123 Fake St.",
+      city: "Fort Worth",
+      state: "TX",
+      zip: "xxxxx",
+      phone: "(817) 555-2337",
+      twitter: "tweettweetyo"
     },
     {
       name: "Pho King",
@@ -24,7 +30,6 @@ const App = () => {
   return (<div className="App">
     <Header />
     <List active="0" restaurants={exampleArray} />
-    Hello World!
   </div>);
 };
 

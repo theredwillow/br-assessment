@@ -1,0 +1,40 @@
+.detail-tile__map
+{
+    height: 180px;
+}
+
+.detail-tile__name-area
+{
+    height: 60px;
+    background-color: var(--darker-color);
+}
+
+.detail-tile__name-area > div
+{
+    margin: 3px 12px;
+}
+
+.detail-tile__name
+{
+    color: var(--header-font-color);
+    font-size: 16px;
+    font-family: "Avenir Next Demi Bold";
+}
+
+.detail-tile__category
+{
+    color: var(--header-font-color);
+    font-size: 12px;
+    font-family: "Avenir Next Regular";
+}
+
+.detail-tile__info
+{
+    padding: 16px 12px;
+}
+
+.detail-tile__info > div
+{
+    margin-bottom: 26px;
+    font-family: "Avenir Next Regular";
+}
