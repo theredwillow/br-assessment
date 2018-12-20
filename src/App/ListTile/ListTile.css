@@ -1,0 +1,23 @@
+.list-tile
+{
+    height: 180px;
+}
+
+.list-tile__name
+{
+    color: var(--header-font-color);
+    font-size: 16px;
+    font-family: "Avenir Next Demi Bold";
+}
+
+.list-tile__category
+{
+    color: var(--header-font-color);
+    font-size: 12px;
+    font-family: "Avenir Next Regular";
+}
+
+.list-tile__name, .list-tile__category
+{
+    margin: 0 12px 6px 12px;
+}

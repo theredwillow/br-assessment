@@ -1,7 +1,13 @@
 @font-face
 {
-    font-family: 'Avenir Next Demi Bold';
-    src: url(../fonts/AvenirNextDemiBold.ttf) format('truetype');
+  font-family: 'Avenir Next Demi Bold';
+  src: url(../fonts/AvenirNextDemiBold.ttf) format('truetype');
+}
+
+@font-face
+{
+  font-family: 'Avenir Next Regular';
+  src: url(../fonts/AvenirNextRegular.ttf) format('truetype');
 }
 
 :root
