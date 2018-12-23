@@ -10,7 +10,7 @@ const ListTile = ({
     category=placeholder.category,
     image=hopdoddy }) => {
     return (
-        <div className="list-tile" style={{ background: `url(${image}) no-repeat center center`, backgroundSize: `100% auto` }}>
+        <div className="list-tile" style={{ background: `url(${ image }) no-repeat center center` }}>
             <div className="list-tile__name">{ name }</div>
             <div className="list-tile__category">{ category }</div>
         </div>
