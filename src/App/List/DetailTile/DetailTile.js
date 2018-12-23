@@ -7,10 +7,8 @@ let placeholder = config.defaultRestaurant;
 const DetailTile = ({
     name=placeholder.name,
     category=placeholder.category,
-    streetAddress=placeholder.streetAddress,
-    city=placeholder.city,
-    state=placeholder.state,
-    zip=placeholder.zip,
+    addressOne=placeholder.addressOne,
+    addressTwo=placeholder.addressTwo,
     phone=placeholder.phone,
     twitter=placeholder.twitter }) => {
     return (
@@ -22,8 +20,8 @@ const DetailTile = ({
             </div>
             <div className="detail-tile__info">
                 <div className="detail-tile__address">
-                    { streetAddress }<br/>
-                    { city }, { state } { zip }
+                    { addressOne }<br/>
+                    { addressTwo }
                 </div>
                 <div className="detail-tile__phone">{ phone }</div>
                 <div className="detail-tile__twitter">@{ twitter }</div>

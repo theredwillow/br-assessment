@@ -3,33 +3,14 @@ import './App.css';
 
 import Header from './Header/Header';
 import List from './List/List';
+/* DEV NOTE: Can't get past cors problem on localhost with fetch(), temporary solution below to keep workflow going */
+import example from './List/example.json';
 
 const App = () => {
 
-  let exampleArray = [
-    {
-      name: "Taco 'Bout It",
-      category: "Taco Stand",
-      streetAddress: "123 Fake St.",
-      city: "Fort Worth",
-      state: "TX",
-      zip: "xxxxx",
-      phone: "(817) 555-2337",
-      twitter: "tweettweetyo"
-    },
-    {
-      name: "Pho King",
-      category: "Vietnamese"
-    },
-    {
-      name: "Pass-Out Bar",
-      category: "Dive Bar"
-    }
-  ];
-
   return (<div className="App">
     <Header />
-    <List active="0" restaurants={exampleArray} />
+    <List restaurants={example.restaurants} />
   </div>);
 };
 
