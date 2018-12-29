@@ -1,9 +1,9 @@
 {
     "restaurants" : [
-	{
-	    "name": "Hopdoddy Burger Bar",
-	    "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/hopdoddy.png",
-	    "category" : "Burgers",
+    {
+        "name": "Hopdoddy Burger Bar",
+        "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/hopdoddy.png",
+        "category" : "Burgers",
             "contact": {
                 "phone": "9723872337",
                 "formattedPhone": "(972) 387-2337",
@@ -25,7 +25,7 @@
                     "United States"
                 ]
             }
-	},
+    },
 	{
 	    "name": "Pappadeaux Seafood Kitchen",
 	    "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/pappadeaux.png",

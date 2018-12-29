@@ -10,3 +10,8 @@
     font-family: "Avenir Next Demi Bold";
 
 }
+
+.App[data-page='list'] #header__back-tile
+{
+    display: none;
+}

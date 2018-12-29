@@ -1,5 +1,6 @@
 const config = {
     appName: "Lunch Tyme",
+    jsonURL: 'https://s3.amazonaws.com/br-codingexams/restaurants.json',
     defaultRestaurant: {
         name: "Restaurant Name",
         category: "Category Type",
@@ -9,5 +10,4 @@ const config = {
         twitter: "twitterhandle"
     }
 };
-
 export default config;
