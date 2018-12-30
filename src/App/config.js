@@ -8,6 +8,8 @@ const config = {
         addressTwo: "Dallas, TX 75206",
         phone: "(972) 387-2337",
         twitter: "twitterhandle"
-    }
+    },
+    googleMapsAPIKey: "AIzaSyBRNzOgoMN5tNR14MT9dDzjuIMPbUwvxnQ"
+        // DEV NOTE: Keys need to be moved to env var's
 };
 export default config;
