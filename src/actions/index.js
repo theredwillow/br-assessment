@@ -17,3 +17,16 @@ export const updateRestaurants = (restaurants) => ({
         restaurants
     }
 });
+
+// List map actions
+export const openMarker = (props, marker) => ({
+    type: 'OPEN_MARKER',
+    payload: {
+        props,
+        marker
+    }
+});
+
+export const closeMarker = {
+    type: 'CLOSE_MARKER'
+};

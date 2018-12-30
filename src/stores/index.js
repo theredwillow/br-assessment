@@ -5,7 +5,12 @@ import example from './example.json';
 
 const initialState = {
     ...example,
-    active: null
+    active: null,
+    listMap : {
+        showingInfoWindow: false,
+        activeMarker: {},
+        selectedPlace: {}
+    }
 };
 
 const store = createStore(reducer, initialState);

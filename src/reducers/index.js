@@ -20,6 +20,26 @@ const reducer = (state, action) => {
 				restaurants: action.payload.restaurants
 			};
 
+		// List Map
+		case "OPEN_MARKER":
+			return {
+				...state,
+				listMap: {
+					selectedPlace: action.payload.props,
+					activeMarker: action.payload.marker,
+					showingInfoWindow: true
+				}
+			};
+		case "CLOSE_MARKER":
+			return {
+				...state,
+				listMap: {
+					showingInfoWindow: false,
+					activeMarker: {},
+					selectedPlace: {}
+				}
+			};
+
 		default:
 		    return state;
 	}
