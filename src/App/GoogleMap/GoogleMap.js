@@ -15,29 +15,42 @@ export const dispatchMarkerClose = () => {
     }
 };
 
+const MarkerPopup = () => (
+    <div>
+        <h4>{ store.getState().listMap.selectedPlace.name }</h4>
+    </div>
+);
+
+const placeMarker = (restaurant, key) => ([
+    <Marker key={ `${key}-marker` }
+        onClick={ dispatchMarker }
+        name={ restaurant.name }
+        position={ restaurant.location }
+    />,
+    <InfoWindow key={ `${key}-info` }
+        marker={ store.getState().listMap.activeMarker }
+        visible={ store.getState().listMap.showingInfoWindow }
+        onClose={ dispatchMarkerClose }
+    >
+        <MarkerPopup/>
+    </InfoWindow>
+]);
+
 const GoogleMap = GoogleApiWrapper({ apiKey: config.googleMapsAPIKey })(
     ({
-        google
+        google,
+        restaurants
     }) => (
         <Map
             google={ google }
             zoom={ 14 }
             style={{ width: '100%', height: '100%' }}
-            initialCenter={{ lat: -1.2884, lng: 36.8233 }}
+            initialCenter={{
+                lat: 32.94954,
+                lng: -96.824004
+            }}
         >
-            <Marker
-            onClick={ dispatchMarker }
-            name={ 'Kenyatta International Convention Centre' }
-            />
-            <InfoWindow
-                marker={ store.getState().listMap.activeMarker }
-                visible={ store.getState().listMap.showingInfoWindow }
-                onClose={ dispatchMarkerClose }
-            >
-                <div>
-                    <h4>{ store.getState().listMap.selectedPlace.name }</h4>
-                </div>
-            </InfoWindow>
+            { restaurants.map( (r,i) => placeMarker(r,i) ) }
         </Map>
     )
 );

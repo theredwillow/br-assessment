@@ -10,7 +10,7 @@ const namePage = (active) => (active) ? `detail-${active}` : "list";
 const App = () => (
   <div className="App" data-page={ namePage(store.getState().active) }>
     <Header />
-    <GoogleMap />
+    <GoogleMap restaurants={ store.getState().restaurants } />
     <List restaurants={ store.getState().restaurants } active={ store.getState().active } />
   </div>
 );
