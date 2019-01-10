@@ -36,7 +36,7 @@ const placeMarker = (restaurant, key) => ([
     </InfoWindow>
 ]);
 
-const GoogleMap = GoogleApiWrapper({ apiKey: config.googleMapsAPIKey })(
+const MapScene = GoogleApiWrapper({ apiKey: config.googleMapsAPIKey })(
     ({
         google,
         restaurants
@@ -55,4 +55,4 @@ const GoogleMap = GoogleApiWrapper({ apiKey: config.googleMapsAPIKey })(
     )
 );
 
-export default GoogleMap;
+export default MapScene;

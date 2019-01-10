@@ -5,7 +5,6 @@ import example from './example.json';
 
 const initialState = {
     ...example,
-    active: null,
     listMap : {
         showingInfoWindow: false,
         activeMarker: {},

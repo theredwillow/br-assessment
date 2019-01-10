@@ -1,6 +1,6 @@
 import React from 'react';
-import './DetailTile.css';
-import config from '../../config';
+import './DetailScene.css';
+import config from '../config';
 
 const placeholder = config.defaultRestaurant;
 
@@ -28,4 +28,18 @@ const DetailTile = ({
         </div>
     </div>
 );
-export default DetailTile;
+
+const DetailScene = (props) => {
+    let restaurant = props.restaurants;
+    restaurant.location = restaurant.location || {};
+    restaurant.contact = restaurant.contact || {};
+    return (<DetailTile
+        name={restaurant.name}
+        category={restaurant.category}
+        addressOne={restaurant.location.formattedAddress[0]}
+        addressTwo={restaurant.location.formattedAddress[1]}
+        phone={restaurant.contact.formattedPhone}
+        twitter={restaurant.contact.twitter}
+    />);
+  };
+export default DetailScene;
