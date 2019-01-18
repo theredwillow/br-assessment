@@ -7,10 +7,10 @@ import List from './List/List';
 
 const namePage = (active) => (active) ? `detail-${active}` : "list";
 
+// <GoogleMap restaurants={ store.getState().restaurants } />
 const App = () => (
   <div className="App" data-page={ namePage(store.getState().active) }>
     <Header />
-    <GoogleMap restaurants={ store.getState().restaurants } />
     <List restaurants={ store.getState().restaurants } active={ store.getState().active } />
   </div>
 );
